@@ -1,0 +1,221 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="text-gray-600 font-body">
+    <div class="md:grid grid-cols-3">
+      <!--content wrapper-->
+      <div class="md:col-span-1 md:flex md:justify-end">
+        <nav class="text-right">
+          <div class="flex justify-between items-center">
+            <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+              <a href="/" class="hover:text-primary">Jaden Ryan</a>
+            </h1>
+            <div id="burger" class="px-4 cursor-pointer md:hidden">
+              <svg
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <ul id="menu" class="text-md mt-6 hidden md:block">
+            <li class="text-gray-750 py-1">
+              <a
+                href="#"
+                class="px-4 flex justify-end border-r-4 border-primary"
+              >
+                <span>Home</span>
+                <svg
+                  class="w-5 inline-block ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 20.0001C20 20.5524 19.5523 21.0001 19 21.0001H5C4.44772 21.0001 4 20.5524 4 20.0001V11.0001H1L11.3273 1.61162C11.7087 1.26488 12.2913 1.26488 12.6727 1.61162L23 11.0001H20V20.0001ZM12 17.0001L15.3588 13.6413C16.2374 12.7627 16.2374 11.338 15.3588 10.4594C14.4801 9.58068 13.0555 9.58068 12.1768 10.4594L12 10.6361L11.8232 10.4594C10.9445 9.58068 9.51992 9.58068 8.64124 10.4594C7.76256 11.338 7.76256 12.7627 8.64124 13.6413L12 17.0001Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="py-1">
+              <a href="#" class="px-4 flex border-r-4 border-white justify-end">
+                <span>About</span>
+                <svg
+                  class="w-5 inline-block ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 5V2C7 1.44772 7.44772 1 8 1H16C16.5523 1 17 1.44772 17 2V5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V6C2 5.44772 2.44772 5 3 5H7ZM4 16V19H20V16H4ZM4 14H20V7H4V14ZM9 3V5H15V3H9ZM11 11H13V13H11V11Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="py-1">
+              <a href="#" class="px-4 flex border-r-4 border-white justify-end">
+                <span>Contact</span>
+                <svg
+                  class="w-5 inline-block ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22H2L4.92893 19.0711C3.11929 17.2614 2 14.7614 2 12ZM6.82843 20H12C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 14.1524 4.85124 16.1649 6.34315 17.6569L7.75736 19.0711L6.82843 20ZM8 13H16C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--end nav-->
+
+      <main class="px-16 py-6 bg-gray-200 md:col-span-2">
+        <div class="flex justify-center md:justify-end">
+          <a
+            href="#"
+            class="button text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in duration-500"
+            >Log In</a
+          >
+          <a
+            href="#"
+            class="button text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in duration-500"
+            >Sign Up</a
+          >
+        </div>
+        <!--<div class="flex items-center justify-center">
+          <div class="bg-red-500 h-4 w-6"></div>
+          <div class="bg-blue-500 h-8 w-6"></div>
+          <div class="bg-green-500 h-12 w-6"></div>
+
+          How to style items using flex box
+
+
+        </div>-->
+
+        <header>
+          <h2 class="text-gray-750 text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-3xl font-semibold">For Gymbros</h3>
+        </header>
+
+        <div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Latest Recipes
+          </h4>
+          <div class="mt-8 grid lg:grid-cols-3 gap-10">
+            <!--Cards go here-->
+            <div class="card hover:shadow-lg">
+              <img
+                src="images/stew.jpg"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Chilli Stew Protein</span>
+                <span class="block text-gray-500 text-sm">Recipe by Jay</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>25 Mins</span>
+              </div>
+            </div>
+            <div class="card hover:shadow-lg">
+              <img
+                src="images/noodles.jpg"
+                alt="noodles"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Veg Noodles</span>
+                <span class="block text-gray-500 text-sm">Recipe by Jay</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>25 Mins</span>
+              </div>
+            </div>
+            <div class="card hover:shadow-lg">
+              <img
+                src="images/curry.jpg"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Tofu Curry</span>
+                <span class="block text-gray-500 text-sm">Recipe by Jay</span>
+              </div>
+              <div class="badge">
+                <svg
+                  class="w-5 inline-block"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span>25 Mins</span>
+              </div>
+            </div>
+          </div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Most Popular
+          </h4>
+          <div class="mt-8">
+            <!--Cards-->
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div
+            class="button bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-105 transition ease-in duration-300 hover:bg-opacity-50"
+          >
+            Load More
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
